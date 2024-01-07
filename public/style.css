@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.4392156863);
+  height: 100vh;
+  width: 50vw;
+  backdrop-filter: blur(0.8rem);
+}
+
+#home_background_image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vh;
+  place-items: center;
+}
+
+body {
+  background-image: url("../../public/images/home_background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*# sourceMappingURL=style.css.map */
