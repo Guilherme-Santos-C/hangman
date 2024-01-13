@@ -1,3 +1,61 @@
-@import "./common/glob";;
+@import "./common/glob";
 @import "./components/glob";
-@import "./layout/glob";
+
+.page1 {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../public/images/home_background.png");
+    background-size: 100vw 100vh; 
+    main {
+        height: 100vh;
+        width: 55vw;
+        background-color: rgb(0, 0, 0, 0.6);
+        backdrop-filter: blur(6px);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50vh 43vh 7vh;
+        div, nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            &.container-buttonsHome{
+                flex-direction: column;
+                gap: 2rem;
+                a {
+                    font-size: 2.8rem;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .volumeOn_icon {
+        position: absolute;
+        width: 5vw;
+        bottom: 2rem;
+        right: 5rem;
+    }
+}
+
+/* Estilos para dispositivos com até 768 pixels de largura */
+// tablets e smartphones
+@media only screen and (max-width: 820px) {
+    .page1 {
+        main{
+            width: 100vw;
+            white-space: nowrap;
+            a {
+                font-size: 2.4rem;
+                text-decoration: none;
+            }
+        }
+        .volumeOn_icon {
+            display: none;
+        }
+    }
+}
