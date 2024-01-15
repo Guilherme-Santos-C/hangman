@@ -18,7 +18,7 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 50vh 43vh 7vh;
-        div, nav{
+        div, nav {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,9 +32,12 @@
                     text-decoration: none;
                 }
             }
+            .volume_button {
+                display: none;
+            }
         }
     }
-    .volumeOn_icon {
+    .volume_icon {
         position: absolute;
         width: 5vw;
         bottom: 2rem;
@@ -50,11 +53,16 @@
             width: 100vw;
             white-space: nowrap;
             a {
-                font-size: 2.4rem;
+                font-size: 2rem;
                 text-decoration: none;
             }
+            div {
+                .volume_button {
+                    display: block;
+                }
+            }
         }
-        .volumeOn_icon {
+        .volume_icon {
             display: none;
         }
     }

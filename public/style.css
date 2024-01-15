@@ -59,7 +59,10 @@ a {
   font-size: 2.8rem;
   text-decoration: none;
 }
-.page1 .volumeOn_icon {
+.page1 main div .volume_button, .page1 main nav .volume_button {
+  display: none;
+}
+.page1 .volume_icon {
   position: absolute;
   width: 5vw;
   bottom: 2rem;
@@ -73,10 +76,13 @@ a {
     white-space: nowrap;
   }
   .page1 main a {
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-decoration: none;
   }
-  .page1 .volumeOn_icon {
+  .page1 main div .volume_button {
+    display: block;
+  }
+  .page1 .volume_icon {
     display: none;
   }
 }
