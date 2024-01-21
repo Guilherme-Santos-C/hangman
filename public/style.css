@@ -32,7 +32,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../../public/images/home_background.png");
+  background-image: url("../public/images/home_background.png");
   background-size: 100vw 100vh;
 }
 .page1 main {

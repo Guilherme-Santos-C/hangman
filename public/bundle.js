@@ -1,0 +1,1 @@
+(()=>{"use strict";var u=0,i=[new Audio("../../../public/music/game_music1.mp3"),new Audio("../../../public/music/game_music2.mp3"),new Audio("../../../public/music/game_music3.mp3")];!function e(){i[u].play(),i[u].addEventListener("ended",(function(){e()})),3==(u+=1)&&(u=0)}(),setTimeout((function(){console.log("chamou"),i[u].pause()}),500)})();
