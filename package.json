@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production",
+    "builD": "webpack --mode=development",
     "sass": "sass ./src/sass/main.scss ./public/style.css",
     "sassw": "sass ./src/sass/main.scss ./public/style.css -w"
   },
