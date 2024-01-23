@@ -59,12 +59,12 @@ a {
   font-size: 2.8rem;
   text-decoration: none;
 }
-.page1 main div .volume_button, .page1 main nav .volume_button {
+.page1 main div .volume_icon_mobile, .page1 main nav .volume_icon_mobile {
   display: none;
 }
 .page1 .volume_icon {
   position: absolute;
-  width: 5vw;
+  width: 6vw;
   bottom: 2rem;
   right: 5rem;
 }
@@ -79,7 +79,7 @@ a {
     font-size: 2rem;
     text-decoration: none;
   }
-  .page1 main div .volume_button {
+  .page1 main div .volume_icon_mobile {
     display: block;
   }
   .page1 .volume_icon {

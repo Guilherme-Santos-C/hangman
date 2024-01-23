@@ -1,19 +1,26 @@
 import { autoplay_musicas, retoma_musicas, para_musicas } from "./modules/audio";
 
-let icone_som = document.querySelector(".volume_icon") as HTMLImageElement;
+let icones_som = [document.querySelector(".volume_icon") as HTMLImageElement, document.querySelector(".volume_icon_mobile") as HTMLImageElement];
 let tocando_musica = true;
 
-icone_som.addEventListener("click", () => {
-    if(tocando_musica){
-        para_musicas()
-        tocando_musica = false;
-        icone_som.src = "./images/volumeOf_icon.png"
-    }
-    else{
-        retoma_musicas()
-        tocando_musica = true;
-        icone_som.src = "./images/volumeOn_icon.png"
-    }
+icones_som.forEach((iconeDeSom, index) => {
+    iconeDeSom.addEventListener("click", () => {
+        if(tocando_musica){
+            para_musicas()
+            tocando_musica = false;
+            iconeDeSom.src = "./images/volumeOff_icon.png"
+            iconeDeSom.textContent = "Música: Off"
+        }
+        else{
+            retoma_musicas()
+            tocando_musica = true;
+            iconeDeSom.src = "./images/volumeOn_icon.png"
+            iconeDeSom.textContent = "Música: On"
+        }
+    })    
 })
 
 autoplay_musicas()
+
+// Aplicação da lógica do funcionamento das músicas através das funções importadas,
+// somente uma vez através do forEach, para as duas mediaQuerys o icone(anchor Element) do mobile esta sendo tratado como imagem para facilitar implementação  

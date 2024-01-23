@@ -32,14 +32,14 @@
                     text-decoration: none;
                 }
             }
-            .volume_button {
+            .volume_icon_mobile {
                 display: none;
             }
         }
     }
     .volume_icon {
         position: absolute;
-        width: 5vw;
+        width: 6vw;
         bottom: 2rem;
         right: 5rem;
     }
@@ -57,7 +57,7 @@
                 text-decoration: none;
             }
             div {
-                .volume_button {
+                .volume_icon_mobile {
                     display: block;
                 }
             }
