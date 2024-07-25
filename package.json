@@ -25,8 +25,5 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
-  },
-  "dependencies": {
-    "parallax-js": "^3.1.0"
   }
 }
